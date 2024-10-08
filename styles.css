@@ -229,6 +229,10 @@ p {
 
 .site-header__branding {
 
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-9);
+
     .branding__link:hover {
         color: var(--clr-primary);
 
@@ -236,13 +240,16 @@ p {
             fill: var(--clr-primary);
         }
     }
+}
+
+a.hidden__branding {
+    display: none;
 
     @media(width > 992px) {
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-9);
+        display: block;
     }
 }
+
 
 .branding-text {
     fill: var(--clr-body);
